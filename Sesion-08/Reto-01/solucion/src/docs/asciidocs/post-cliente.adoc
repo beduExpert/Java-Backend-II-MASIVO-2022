@@ -1,0 +1,17 @@
+[[clientes]]
+== Clientes
+
+=== POST nuevo cliente
+Crea un nuevo cliente
+
+==== Ejemplo de petición
+include::{snippets}/cliente/post-cliente/http-request.adoc[]
+
+==== Campos de la petición
+include::{snippets}/cliente/post-cliente/request-fields.adoc[]
+
+==== Ejemplo de respuesta
+include::{snippets}/cliente/post-cliente/http-response.adoc[]
+
+==== Ejemplo usando CURL
+include::{snippets}/cliente/post-cliente/curl-request.adoc[]
