@@ -1,0 +1,17 @@
+[[clientes]]
+== Clientes
+
+=== Get cliente por Id
+Obtiene un cliente específico usando su identificador único.
+
+==== Ejemplo de petición
+include::{snippets}/cliente/get-cliente/http-request.adoc[]
+
+==== Parámetros de la petición
+include::{snippets}/cliente/get-cliente/path-parameters.adoc[]
+
+==== Ejemplo de respuesta
+include::{snippets}/cliente/get-cliente/http-response.adoc[]
+
+==== Ejemplo usando CURL
+include::{snippets}/cliente/get-cliente/curl-request.adoc[]
