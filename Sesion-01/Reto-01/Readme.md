@@ -17,7 +17,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 <details>
 	<summary>Solución</summary>
 
-1. Entra al sitio de [Spring Initializr](https://start.spring.io/). Comienza llenando la información de la sección del lado izquierdo.
+1. Entra al sitio de <a href="https://start.spring.io/" target="_blank">Spring Initializr</a>. Comienza llenando la información de la sección del lado izquierdo.
 - **Gradle** Proyect
 - Lenguaje: **Java**.
 - Versión de Spring Boot, la versión estable más reciente

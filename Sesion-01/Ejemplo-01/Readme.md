@@ -10,7 +10,7 @@
 
 #### DESARROLLO
 
-1. Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
+1. Entra al sitio de <a href="https://start.spring.io/" target="_blank">Spring Initializr</a>. Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
   - Tipo de proyecto: **Maven Proyect**.
   - Lenguaje: **Java**.
   - Versión de Spring Boot, la versión estable más reciente.

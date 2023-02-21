@@ -12,7 +12,7 @@
 ### DESARROLLO
 
 > NOTA:
-> Esta ejemplo requiere la versión de paga o de prueba de IDE IntelliJ Idea, si no lo tienes instalado te puedes apoyar con este material para conocer como es el proceso de creación de un proyecto desde el IDE, en los siguientes modulos utilizaremos el sitio de [Spring Initializr](https://start.spring.io/).
+> Esta ejemplo requiere la versión de paga o de prueba de IDE IntelliJ Idea, si no lo tienes instalado te puedes apoyar con este material para conocer como es el proceso de creación de un proyecto desde el IDE, en los siguientes modulos utilizaremos el sitio de <a href="https://start.spring.io/" target="_blank">Spring Initializr</a>.
 
 Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes características:
 - Herramienta de construcción: **Maven**
