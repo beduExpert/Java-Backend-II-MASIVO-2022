@@ -23,15 +23,14 @@ Su objetivo es ayudarnos a generar esa estructura inicial del proyecto de una fo
 ### ORGANIZACIÓN DE LA CLASE
 
 - Proyecto Gradle con Spring Initializr
-    - [Ejemplo 01](Ejemplo-01)
     - [Reto 01](Reto-01)
  
 - Proyecto Maven con Spring Initializr
-    - [Ejemplo 02](Ejemplo-02)
+    - [Ejemplo 01](Ejemplo-01)
     - [Reto 02](Reto-02)
 
-- Proyecto Maven con IntelliJ Idea
-    - [Ejemplo 03](Ejemplo-03)
+- Proyecto Maven con IntelliJ Idea Ultimate
+    - [Ejemplo 02](Ejemplo-02)
     - [Reto 03](Reto-03)
 	
 ### POSTWORK

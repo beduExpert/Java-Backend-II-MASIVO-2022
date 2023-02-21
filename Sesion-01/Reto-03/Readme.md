@@ -1,4 +1,4 @@
-## Reto: Creación de Proyecto Maven con Spring Initializr desde IntelliJ Idea
+## Reto 03: Creación de Proyecto Maven con Spring Initializr desde IntelliJ Idea
 
 ### OBJETIVO
 - Crear un nuevo proyecto Spring Boot, usando Spring Initializr desde el IDE IntelliJ Idea, sin ayuda del instructor.
@@ -6,10 +6,14 @@
 
 #### REQUISITO
 - Tener instalado la última versión del **JDK 11 o 17**.
-- Tener instalado la última versión del IDE IntelliJ Idea Community Edition (o el trial de la última edition).
+- Tener instalado la última versión del IDE IntelliJ Idea Ultimate (con licencia o el trial de la última edition).
 - Tener una conexión a Internet.
 
 ### DESARROLLO
+
+> NOTA:
+> Esta ejemplo requiere la versión de paga o de prueba de IDE IntelliJ Idea, si no lo tienes instalado te puedes apoyar con este material para conocer como es el proceso de creación de un proyecto desde el IDE, en los siguientes modulos utilizaremos el sitio de [Spring Initializr](https://start.spring.io/).
+
 Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes características:
 - Herramienta de construcción: **Maven**
 - Lenguaje de programación: **Java 11 o 17**
@@ -78,3 +82,8 @@ Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
 </details> 
 
+<br>
+
+[**`Siguiente`** -> postwork](../Postwork/)
+
+[**`Regresar`**](../)

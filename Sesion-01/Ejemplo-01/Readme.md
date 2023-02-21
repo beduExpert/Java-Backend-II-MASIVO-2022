@@ -1,22 +1,22 @@
-## Ejemplo: Creación de proyecto Gradle con Spring Initializr
+## Ejemplo 01: Creación de proyecto Maven con Spring Initializr
 
 ### OBJETIVO
-- Crear un proyecto Gradle usando Spring Initializr.
+- Crear un proyecto Maven usando Spring Initializr.
 - Compilar, empaquetar y ejecutar la aplicación o proyecto generados desde la línea de comandos.
 
-
 #### REQUISITOS
-1. Tener instalada la última versión del JDK 11 o 17.
+1. Tener instalado la última versión del JDK 11 o 17.
+2. Tener una conexión a Internet.
 
-### DESARROLLO
+#### DESARROLLO
 
 1. Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
-  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
+  - Tipo de proyecto: **Maven Proyect**.
   - Lenguaje: **Java**.
-  - Versión de Spring Boot, la versión estable más reciente
+  - Versión de Spring Boot, la versión estable más reciente.
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **17** u **11**.
+  - Versión de Java: **11** o **17**.
 
 ![imagen](img/img_01.png)
 
@@ -26,7 +26,7 @@
 
 3. Selecciona la dependencia `Spring Web` y con eso debes verla en la lista de las dependencias del proyecto:
 
-![imagen](img/img_06.png)
+![imagen](img/img_06.png) 
 
 4. Presiona el botón "GENERATE" (o presiona `Ctrl` + `Enter` en tu teclado) para que comience la descarga del proyecto.
 
@@ -34,47 +34,47 @@
 
 5. Descomprime el archivo `zip` descargado, el cual tiene más o menos el siguiente contenido.
 
-![imagen](img/img_04.png)
+![imagen](img/img_07.png)
 
-6. Abre una terminal o línea de comandos en el directorio que acabas de descomprimir y ejecuta los siguientes comandos, los cuales se ejecutan en Gradle gracias a un *wrapper* que se distribuye dentro del paquete que acabas de descargar:
+6. Abre una terminal o línea de comandos en el directorio que acabas de descomprimir y ejecuta los siguientes comandos, los cuales se ejecutan en **Maven** gracias a un *wrapper* que se distribuye dentro del paquete que acabas de descargar (Nota: si es la primera vez que ejecutas Maven en tu computadora, el comando tardará un buen rato en ejecutarse, ya que debe descargar las librerías y paquetes necesarios):
 
-        gradlew clean build
+        mvnw clean package
       
 7. La salida del comando anterior debe ser parecida a la siguiente:
 
-![imagen](img/img_07.png)
+![imagen](img/img_08.png)
 
 8. Una vez que todo está compilado, usa el siguiente comando para ejecutar la aplicación. 
 
-        gradlew bootRun
+        mvnw spring-boot:run
         
 9. Debes obtener una salida similar a la siguiente:
 
-![imagen](img/img_08.png)
+![imagen](img/img_09.png)
 
-Esto indica que la aplicación se está ejecutando en el puerto **8080**. Como no hemos colocado ningún contenido en la aplicación no hay mucho que mostrar pero podremos comprobar que la aplicación está bien configurada, que todos los elementos necesarios están instalados y configurados y que nuestra aplicación se ejecuta de forma correcta:
+Esto indica que la aplicación se levantó correctamente en el puerto **8080**. 
 
       http://localhost:8080
       
 Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
-![imagen](img/img_09.png)
+![imagen](img/img_10.png)
 
 10. Detén la aplicación presionando `Ctrl + C` en la terminal en donde levantaste la aplicación.
 
 Puesto que la aplicación está completamente contenida en un archivo `jar`, también es posible ejecutarla de otra forma.
 
-11. Al compilar la aplicación con `gradlew build` se creó un directorio `build` y dentro de este un directorio `libs`. Navega a este directorio, el cual debe contener solamente un archivo `jar`.
+11. Al compilar la aplicación con `mvnw package` se creó un directorio `target`. Navega a este directorio, el cual debe contener, entre otras cosas, un archivo `jar`.
 
-![imagen](img/img_10.png)
+![imagen](img/img_11.png)
 
 12. Abre una terminal en este directorio y ejecuta el siguiente comando (cambia el nombre del jar si en tu caso es diferente):
 
-        java -jar backend.sesion1-0.0.1-SNAPSHOT.jar
+        java -jar sesion1.ejemplo2-0.0.1-SNAPSHOT.jar
         
-13. Con esto debes obtener una salida como la siguiente:
+13. Con esto nuevamente debes obtener una salida como la siguiente:
 
-![imagen](img/img_11.png)
+![imagen](img/img_12.png)
 
 Nuevamente, esto indica que la aplicación se levantó correctamente en el puerto **8080**.
 
@@ -82,6 +82,9 @@ Nuevamente, esto indica que la aplicación se levantó correctamente en el puert
       
 Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
-![imagen](img/img_09.png)
+![imagen](img/img_13.png)
 
-13. ¡¡Felicidades, acabas de ejecutar tu primer "Hola mundo" con Spring Boot!!
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)
