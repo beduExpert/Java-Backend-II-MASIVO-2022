@@ -31,42 +31,48 @@ Estas clases están vacías por el momento (no tendrán atributos)
     
 4. Dentro de cada uno de los servicios coloca métodos que permitan crear, leer, actualizar y eliminar recursos (objetos del paquete `model`). Para ello tendrás que usar los métodos HTTP: **GET**, **POST**, **PUT** y **DELETE**.
 
-Tus servicios deben seguir este patrón:
+    Tus servicios deben seguir este patrón:
 
-```java
-@RestController
-@RequestMapping("/cliente")
-public class ClienteController {
+    ```java
+    @RestController
+    @RequestMapping("/cliente")
+    public class ClienteController {
 
-    @GetMapping("/{clienteId}")
-    public ResponseEntity<Cliente> getCliente(@PathVariable Long clienteId){
+        @GetMapping("/{clienteId}")
+        public ResponseEntity<Cliente> getCliente(@PathVariable Long clienteId){
 
+        }
+
+        @GetMapping
+        public ResponseEntity <List<Cliente>> getClientes(){
+
+        }
+
+        @PostMapping
+        public ResponseEntity<Void> creaCliente(@RequestBody Cliente cliente){
+
+        }
+
+        @PutMapping("/{clienteId}")
+        public ResponseEntity<Void> actualizaCliente(@PathVariable Long clienteId, @RequestBody Cliente cliente){
+
+        }
+
+        @DeleteMapping("/{clienteId}")
+        public ResponseEntity<Void> eliminaCliente(@PathVariable Long clienteId){
+
+        }
     }
-
-    @GetMapping
-    public ResponseEntity <List<Cliente>> getClientes(){
-
-    }
-
-    @PostMapping
-    public ResponseEntity<Void> creaCliente(@RequestBody Cliente cliente){
-
-    }
-
-    @PutMapping("/{clienteId}")
-    public ResponseEntity<Void> actualizaCliente(@PathVariable Long clienteId, @RequestBody Cliente cliente){
-
-    }
-
-    @DeleteMapping("/{clienteId}")
-    public ResponseEntity<Void> eliminaCliente(@PathVariable Long clienteId){
-
-    }
-}
-```
+    ```
 
 
-La estructura de tu proyecto debe quedar de la siguiente forma:
+    La estructura de tu proyecto debe quedar de la siguiente forma:
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
 
+
+<br>
+
+[**`Siguiente`** -> sesión 3](../../Sesion-03/)
+
+[**`Regresar`**](../)
