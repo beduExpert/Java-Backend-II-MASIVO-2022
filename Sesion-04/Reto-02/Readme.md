@@ -1,4 +1,4 @@
-## Reto: Manejo de errores extendiendo ResponseEntityExceptionHandler 
+## Reto 02: Manejo de errores extendiendo ResponseEntityExceptionHandler 
 
 ### OBJETIVO
 - Manejar los errores comunes ocurridos dentro de una aplicación web, extendiendo de la clase base `ResponseEntityExceptionHandler` de Spring.
@@ -11,19 +11,19 @@
 
 
 ### DESARROLLO
-- Crea un nuevo proyecto Spring Boot en IntelliJ Idea como lo hiciste en la primera sesión. 
-- Crea una nueva clase que represente un recurso de tipo `Producto` con los siguientes atributos: 
+1. Crea un nuevo proyecto Spring Boot. 
+2. Crea una nueva clase que represente un recurso de tipo `Producto` con los siguientes atributos: 
     - long id;
     - String nombre;
     - float precio
     - String categoria;
     - String numeroRegistro;
     - private LocalDate fechaCreacion;
-- Crea una nueva clase que represente un servicio REST, usando la anotación `@RestController`.
-- Crea un nuevo manejador de peticiones de tipo **POST** que reciba como un parámetro de tipo "`Producto`" y regrese un código de respuesta **201**.
-- Agrega una clase `RespuestaError` como la del Ejemplo anterior.
-- Agrega un manejador global de errores con una clase decorada con la anotación `@RestControllerAdvice` que extienda la clase `ResponseEntityExceptionHandler` y sobreescribe el método `handleHttpRequestMethodNotSupported` el cual se invoca cuando se hace una petición a un método HTTP que no existe en el servicio; en el ejemplo anterior estamos agregando un método **POST** pero tú deberás hacer una petición a un método **GET** (que no existe).
-- Envía una petición de prueba desde la herramienta Postman, recuerda que esta petición debe ser de tipo **POST**.
+3. Crea una nueva clase que represente un servicio REST, usando la anotación `@RestController`.
+4. Crea un nuevo manejador de peticiones de tipo **POST** que reciba como un parámetro de tipo "`Producto`" y regrese un código de respuesta **201**.
+5. Agrega una clase `RespuestaError` como la del Ejemplo anterior.
+6. Agrega un manejador global de errores con una clase decorada con la anotación `@RestControllerAdvice` que extienda la clase `ResponseEntityExceptionHandler` y sobreescribe el método `handleHttpRequestMethodNotSupported` el cual se invoca cuando se hace una petición a un método HTTP que no existe en el servicio; en el ejemplo anterior estamos agregando un método **POST** pero tú deberás hacer una petición a un método **GET** (que no existe).
+7. Envía una petición de prueba desde la herramienta Postman, recuerda que esta petición debe ser de tipo **POST**.
 
 
 <details>
@@ -31,62 +31,63 @@
    
 1. Crea un proyecto Maven usando Spring Initializr desde el IDE IntelliJ Idea.
 
-2. En la ventana que se abre selecciona las siguientes opciones:
-- Grupo, artefacto y nombre del proyecto.
-- Tipo de proyecto: **Maven Project**.
-- Lenguaje: **Java**.
-- Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+2. Selecciona las siguientes opciones:
 
-3. En la siguiente ventana elige **Spring Web** como dependencia del proyecto.
+    - Grupo: **org.bedu.java.backend**
+    - Artefacto y nombre del proyecto: **sesion4-reto2**
+    - Tipo de proyecto: **Maven Project**.
+    - Lenguaje: **Java**.
+    - Forma de empaquetar la aplicación: **jar**.
+    - Versión de Java: **11**.
 
-4. Dale un nombre y una ubicación al proyecto y presiona el botón Finish.
+3. Elige **Spring Web** como dependencia del proyecto.
 
-5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.reto2`. Dentro crea dos subpaquetes: `model` y `controllers`.
+4. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.reto2`. Dentro crea dos subpaquetes: `model` y `controllers`.
 
 6. Dentro del paquete `model` crea una nueva clase llamada "`Producto`" con los siguientes atributos:
 
-```java
+    ```java
     private long id;
     private String nombre;
     private float precio;
     private String categoria;
     private String numeroRegistro;
     private LocalDate fechaCreacion;
-```
+    ```
 
-Agrega también los *getter*s y *setter*s de cada atributo.
+    Agrega también los *getter*s y *setter*s de cada atributo.
 
 7. En el paquete `controllers` agrega una clase llamada `ProductoController` y decórala con la anotación `@RestController`, de la siguiente forma:
 
-```java
-@RestController
-@RequestMapping("/producto")
-public class ProductoController {
+    ```java
+    @RestController
+    @RequestMapping("/producto")
+    public class ProductoController {
 
-}
-```
+    }
+    ```
 
 8. Agrega un nuevo manejador de peticiones **POST** el cual reciba un identificador como parámetro de petición, de la siguiente forma:
 
-```java
+    ```java
     @PostMapping
     public ResponseEntity<Void> agregaProducto(@RequestBody Producto producto){
         return ResponseEntity.created(URI.create("")).build();
     }
-```
+    ```
+
 9. Dentro del paquete `controllers` crea un nuevo paquete llamado `handlers` y dentro de este un clase llamada `ManejadorGlobalExcepciones` que extienda a la clase `ResponseEntityExceptionHandler`. Decora esta clase con la anotación `@ControllerAdvice`:
 
-```java
+    ```java
     @RestControllerAdvice
     public class ManejadorGlobalExcepciones extends ResponseEntityExceptionHandler {
     
     }
-```
+    ```
 
 10. Dentro de esta clase sobreescribe el método `handleHttpRequestMethodNotSupported` con el siguiente contenido:
 
-```java
+    ```java
     @Override
     protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
 
@@ -106,12 +107,17 @@ public class ProductoController {
 
         return new ResponseEntity<Object>(respuestaError, new HttpHeaders(), HttpStatus.METHOD_NOT_ALLOWED);
     }
-```
+    ```
 
 11. Ejecuta la aplicación y, desde Postman, envía una petición **GET**.
 
-Debes obtener un resultado como el siguiente:
+    Debes obtener un resultado como el siguiente:
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
 
 </details>
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)

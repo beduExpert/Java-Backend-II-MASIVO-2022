@@ -1,4 +1,4 @@
-## Ejemplo: Negociación de contenido
+## Ejemplo 03: Negociación de contenido
 
 ### OBJETIVO
 - Aprender las formas que Spring MVC ofrece para regresar al usuario una respuesta usando en formatos o tipos de contenido.
@@ -10,44 +10,43 @@
 - Tener instalada la herramienta Postman.
 
 ### Desarrollo
-1. Crea un proyecto Maven usando Spring Initializr desde el IDE IntelliJ Idea.
+1. Crea un proyecto Maven usando Spring Initializr.
 
-2. En la ventana que se abre selecciona las siguientes opciones:
-- Grupo, artefacto y nombre del proyecto.
-- Tipo de proyecto: **Maven Project**.
-- Lenguaje: **Java**.
-- Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11** o **17**.
+2. Selecciona las siguientes opciones:
+    - Grupo: **org.bedu.java.backend**
+    - Artefacto y nombre del proyecto: **sesion4.ejemplo3**
+    - Tipo de proyecto: **Maven Project**.
+    - Lenguaje: **Java**.
+    - Forma de empaquetar la aplicación: **jar**.
+    - Versión de Java: **11** o **17**.
 
-3. En la siguiente ventana elige **Spring Web** como dependencia del proyecto.
+3. Elige **Spring Web** como dependencia del proyecto.
 
-4. Dale un nombre y una ubicación al proyecto y presiona el botón Finish.
-
-5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.ejemplo3`. Dentro crea dos subpaquetes: `model` y `controllers`.
+4. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.ejemplo3`. Dentro crea dos subpaquetes: `model` y `controllers`.
 
 6. Dentro del paquete `model` crea una nueva clase llamada "`Producto`" con los siguientes atributos:
 
-```java
+    ```java
     private long id;
     private String nombre;
     private float precio;    
-```
+    ```
 
-Agrega también los *getter*s y *setter*s de cada atributo.
+    Agrega también los *getter*s y *setter*s de cada atributo.
 
 7. En el paquete `controllers` agrega una clase llamada `ProductoController` y decórala con la anotación `@RestController`, de la siguiente forma:
 
-```java
-@RestController
-@RequestMapping("/producto")
-public class ProductoController {
+    ```java
+    @RestController
+    @RequestMapping("/producto")
+    public class ProductoController {
 
-}
-```
+    }
+    ```
 
 8. Agrega un nuevo manejador de peticiones **GET**, de la siguiente forma:
 
-```java
+    ```java
     @GetMapping(value = "/{productoId}")
     public ResponseEntity<Producto> getProducto(@PathVariable long productoId){
         Producto producto = new Producto();
@@ -57,22 +56,30 @@ public class ProductoController {
 
         return ResponseEntity.ok(producto);
     }
-```
+    ```
 
 9. En el archivo `pom.xml` agrega la siguiente dependencia:
-```xml
-  <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-  </dependency>
-```
+
+    ```xml
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    ```
 
 10. Ejecuta la aplicación y, desde Postman, envía una petición **GET** a la siguiente URL: `http://localhost:8080/producto/5`. Debes obtener un resultado como el siguiente:
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
 
 11. En Postman agrega una cabecera llamada `Accept` que tenga como valor `application/xml` y envía nuevamente la petición, ahora debes obtener un resultado en formato XML:
 
-![imagen](img/img_02.png)
+    ![imagen](img/img_02.png)
 
-![imagen](img/img_03.png)
+    ![imagen](img/img_03.png)
+
+
+<br>
+
+[**`Siguiente`** -> postwork](../Postwork/)
+
+[**`Regresar`**](../)
