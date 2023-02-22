@@ -29,7 +29,6 @@ JSR-380 Bean Validation es una especificación cuyo objetivo es estandarizar la 
   
 - Spring MCV Controller Advice
   - [Ejemplo 3](Ejemplo-03)
-  - [Reto 3](Reto-03)
 
 
 ### POSTWORK
