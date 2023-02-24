@@ -16,7 +16,7 @@
     
 - Asegúrate, en el panel de estructura de la clase, que los métodos se hayan generado de forma correcta y completa:
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
 
 - Dentro del paquete `controllers` agrega un subpaquete `mappers` y agrega una interface de mape para cada uno de los tipos de objetos en el paquete `model` (excluyendo `RespuestaError`. 
 
@@ -24,4 +24,10 @@
 
 - La estructura del proyecto debe verse de la siguiente forma:
 
-![imagen](img/img_02.png)
+    ![imagen](img/img_02.png)
+
+<br>
+
+[**`Siguiente`** -> sesión 6](../../Sesion-06/)
+
+[**`Regresar`**](../)
