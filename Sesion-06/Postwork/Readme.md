@@ -19,10 +19,17 @@
 
 6. Agrega la dependencia de H2 a la aplicación y asegúrate de que puedes conectarte a esta.
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
 
 7. Agrega una clase que implemente la interface `CommandLineRunner` de Spring para inicializar los catálogos de la aplicación.
 
-![imagen](img/img_02.png)
+    ![imagen](img/img_02.png)
 
-![imagen](img/img_03.png)
+    ![imagen](img/img_03.png)
+
+
+<br>
+
+[**`Siguiente`** -> sesión 7](../../Sesion-07/)
+
+[**`Regresar`**](../)
