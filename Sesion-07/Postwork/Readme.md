@@ -19,4 +19,11 @@
 5. Asegúrate que al final todas las pruebas se ejecuten de forma correcta:
 
 
-![imagen](img/img_01.png)
+    ![imagen](img/img_01.png)
+
+
+<br>
+
+[**`Siguiente`** -> sesión 8](../../Sesion-08/)
+
+[**`Regresar`**](../)
