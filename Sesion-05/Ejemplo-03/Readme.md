@@ -12,19 +12,18 @@
 
 ### Desarrollo
 
-1. Crea un proyecto Maven usando Spring Initializr desde el IDE IntelliJ Idea.
+1. Entra al sitio de <a href="https://start.spring.io/" target="_blank">Spring Initializr</a>. Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
 
 2. En la ventana que se abre selecciona las siguientes opciones:
-
     - Grupo, artefacto y nombre del proyecto.
     - Tipo de proyecto: **Maven Project**.
     - Lenguaje: **Java**.
     - Forma de empaquetar la aplicación: **jar**.
     - Versión de Java: **11** o **17**.
 
-3. En la siguiente ventana elige **Spring Web** y **Lombok** como dependencia del proyecto.
+3. En la sección de la derecha (las dependencias) presiona el botón `Add dependencies` y en la ventana que se abre busca las dependencias `Spring Web` y `Lombok`.
 
-4. Dale un nombre y una ubicación al proyecto y presiona el botón *Finish*.
+4. Dale un nombre y una ubicación al proyecto y presiona el botón *Generate*.
 
 5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion5.ejemplo3`. Dentro crea los subpaquetes: `model`, `dtos`  y `controllers`. Dentro del paquete `dtos` crea un subpaquete `mappings`.
 
