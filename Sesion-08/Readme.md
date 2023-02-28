@@ -20,7 +20,7 @@ Existen diversas herramientas y métodos para realizar la documentación de serv
   - [Reto 2](Reto-02)
 
 - Distribución de la documentación dentro de la aplicación
-    - [Ejemplo 3](Ejemplo-03)
+  - [Ejemplo 3](Ejemplo-03)
 
 ### POSTWORK
 [Documentación de Servicios](Postwork)
