@@ -3,10 +3,13 @@
 ### OBJETIVO
 - Declarar entidades y almacenarlas en una base de datos relacional.
 - Crear un repositorio de Spring Data y para guardar y recuperar entidades.
-- Usar la consola de H2 para visualizar la información de la base de datos
+- Usar la consola de H2 para visualizar la información de la base de datos.
 
 
 ### DESARROLLO
+
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 1. Agrega el driver de MySQL como dependencia del proyecto.
 
 2. Agrega las propiedades para realizar la conexión a la base de datos en el archivo `application.properties` del proyecto. 

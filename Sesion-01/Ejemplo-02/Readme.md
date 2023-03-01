@@ -24,7 +24,7 @@
 
 3. En la ventana que se abre selecciona las siguientes opciones: 
 - Grupo, artefacto y nombre del proyecto.
-- Tipo de proyecto: **Maven Proyect**.
+- Tipo de proyecto: **Maven Project**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
 - Versión de Java: **11** o **17**.

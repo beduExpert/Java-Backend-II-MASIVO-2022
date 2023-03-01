@@ -10,6 +10,8 @@
 
 En esta sesión se definen los manejadores de eventos para las operaciones que realizará el CRM, manejando las altas, bajas y cambios (CRUD) de los clientes, productos, visitas y ventas.
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 **Asegúrate de comprender:**
 
 - Los diferentes métodos HTTP (GET, POST, PUT, ...) y el significado o propósito de cada uno.

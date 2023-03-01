@@ -102,9 +102,9 @@
 12. Dentro de la clase `VisitaController` agrega el siguiente método:
 
     ```java
-  public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
+    public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
   
-  }
+    }
     ```
 
     Este método será invocado cada vez que ocurra un error de tipo `MethodArgumentNotValidException`, que es el error que se lanza cuando un objeto no cumple con alguna validación de datos. Decora este método con `@ExceptionHandler(MethodArgumentNotValidException.class)`, para indicarle que estos son el tipo de excepciones que manejará, y con `@ResponseStatus(HttpStatus.BAD_REQUEST)` para indicar que ese es el estatus de respuesta que debe regresar, de la siguiente forma:

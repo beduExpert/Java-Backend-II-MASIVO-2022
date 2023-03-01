@@ -101,7 +101,7 @@
     }
     ```
 
-10. Agrega lis siguientes métodos dentro de la interface `ClienteMapper`, el primero le dice a MapStruct que debe crear un método que transforme de un `ClienteDto` (que recibe como parámetro) a un `Cliente` (que es el objeto que el método regresará). El segundo método hace lo opuesto, recibe un objeto `Cliente` y regresa un objeto `ClienteDto` con los atribtos mapeados provenientes del `Cliente`. MapStruct se encargará de crear una implementación de esta interface.
+10. Agrega los siguientes métodos dentro de la interface `ClienteMapper`, el primero le dice a MapStruct que debe crear un método que transforme de un `ClienteDto` (que recibe como parámetro) a un `Cliente` (que es el objeto que el método regresará). El segundo método hace lo opuesto, recibe un objeto `Cliente` y regresa un objeto `ClienteDto` con los atribtos mapeados provenientes del `Cliente`. MapStruct se encargará de crear una implementación de esta interface.
 
     ```java
     Cliente clienteDtoToCliente(ClienteDto clienteDto);

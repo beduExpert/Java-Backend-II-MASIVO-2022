@@ -10,6 +10,8 @@ En esta sesión se utilizan los distintos elementos que proporcionan Spring MVC 
 
 Esto también nos permitirá usar los códigos de error definidos en el protocolo HTTP como complemento de los mensajes de respuesta enviados a los usuarios del API.
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 **Asegúrate de comprender:**
 
 1. El significado de los códigos de error más comunes en HTTP.

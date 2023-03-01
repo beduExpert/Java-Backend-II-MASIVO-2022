@@ -11,6 +11,7 @@ En esta sesión se generará la documentación de los servicios generados en las
 
 Para eso, usaremos Spring REST Docs, el módulo de Spring para generación de documentos.
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
 
 **Asegúrate de comprender:**
 

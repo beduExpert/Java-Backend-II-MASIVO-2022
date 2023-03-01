@@ -1,4 +1,4 @@
-## Ejemplo 01: Controladores con Spring MVC con parámetros
+## Reto 01: Controladores con Spring MVC con parámetros
 
 ### OBJETIVO
 - Aprender la forma de crear controladores de Spring usando su módulo web (Spring MVC) y recibir un parámetro.
