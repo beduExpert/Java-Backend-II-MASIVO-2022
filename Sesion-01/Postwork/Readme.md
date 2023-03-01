@@ -3,11 +3,19 @@
 ### OBJETIVO
 Crear la estructura de tu proyecto personal, el cual implementará las funciones básicas de un sistema para **CRM** (*Customer Relationship Management*), el cual es un software de apoyo a la gestión de las relaciones con los clientes, a la venta y al marketing.
 
-En este primer Postwork crearás el proyecto *Maven* desde Spring Initializr que servirá para implementar, a lo largo del resto de las sesiones, la estructura básica del CRM.
-
 #### DESARROLLO
 
+En este primer Postwork crearás el proyecto Maven desde Spring Initializr que servirá para implementar, a lo largo del resto de las sesiones, la estructura básica del CRM.
+
+Puedes generar el proyecto desde <a href="https://start.spring.io/" target="_blank">Spring Initializr</a> como lo hicimos en el ejemplo 1.
+
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
+
+<br>
+
+<details>
+	<summary>Solución</summary>
 
 1. Entra al sitio de <a href="https://start.spring.io/" target="_blank">Spring Initializr</a>. Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
    - Tipo de proyecto: **Maven Project**.
@@ -82,6 +90,9 @@ El postwork se realizará en equipo, los cuales serán formados previamente a la
     Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
     ![imagen](img/img_13.png)
+
+
+</details>
 
 
 <br>
