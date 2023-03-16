@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 - Integrar JUnit como framework de pruebas unitarias en una aplicación desarrollada con Spring Boot.
-- Desarrollar una serie de pruebas unitarias usando los objetos proporcionados por Spring Test para validar el correcto funcionamietno de la aplicación.
+- Desarrollar una serie de pruebas unitarias usando los objetos proporcionados por Spring Test para validar el correcto funcionamiento de la aplicación.
 - Ejecutar y obtener el resultado de las pruebas unitarias desde el entorno de desarrollo.
 
 
