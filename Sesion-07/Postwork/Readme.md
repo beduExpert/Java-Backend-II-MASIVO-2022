@@ -233,7 +233,7 @@ El propósito de este Postwork es retomar el proyecto del módulo anterior y rea
 
 2. Para el paso anterior será necesario implementar las funcionalidades en todas las capas de la aplicación, desde los controladores hasta los repositorios para el manejo de los datos almacenados.
 
-    A continación te dejamos como quedaría *ClienteController*:
+    A continuación te dejamos como quedaría *ClienteController*:
 
     ```java
     @RestController
